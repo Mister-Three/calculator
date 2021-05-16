@@ -1,229 +1,62 @@
-import random
-import time
-import os
-import json
 import webbrowser
+import time
 
+def add(n1, n2):
+    print(int(n1) + int(n2))
+def sub(n1, n2):
+    print(int(n1) - int(n2))
+def mult(n1, n2):
+    print(int(n1) * int(n2))
+def div(n1, n2):
+    print(int(n1) / int(n2))
 print("Welcome to M3r_\'s math problem solver!")
-def help ():
-    print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random")
-help()
-start = input("So, what type of math problem are we doing today? \n")
-if start == "multiplication":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) * int(y)
-    print(sum)
-if start == "Multiplication":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) * int(y)
-    print(sum)
-if start == "*":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) * int(y)
-    print(sum)
-if start == "division":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) / int(y)
-    print(sum)
-if start == "Division":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) / int(y)
-    print(sum)
-if start == "/":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) / int(y)
-    print(sum)
-if start == "addition":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) + int(y)
-    print(sum)
-if start == "Addition":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) + int(y)
-    print(sum)
-if start == "+":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) + int(y)
-    print(sum)
-if start == "subtraction":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) - int(y)
-    print(sum)
-if start == "Subtraction":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) - int(y)
-    print(sum)
-if start == "-":
-    x = input("Input the first number: ")
-    y = input("Input the second number: ")
-    sum = int(x) - int(y)
-    print(sum)
-if start == "random":
-    print(random.randrange(69, 420))
-if start == "help":
-    print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random")
-if start == "Help":
-    print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random")
-if start == "69":
-    url = 'https://youtu.be/U2OjsKMcZQA'
-    webbrowser.register('chrome',
-	None,
-	webbrowser.BackgroundBrowser("C://Program Files (x86)//Google//Chrome//Application//chrome.exe"))
-    webbrowser.get('chrome').open(url)
-    print("Enjoy fireball :D")
-if start == "cock":
-    url = 'https://youtu.be/U2OjsKMcZQA'
-    webbrowser.register('chrome',
-	None,
-	webbrowser.BackgroundBrowser("C://Program Files (x86)//Google//Chrome//Application//chrome.exe"))
-    webbrowser.get('chrome').open(url)
-    print("Enjoy fireball :D")
-else:
-    print("That is either not a valid phrase or was mistyped :c sorry")
-    time.sleep(2)
-def answers ():
-    if start == "multiplication":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) * int(y)
-        print(sum)
-    if start == "Multiplication":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) * int(y)
-        print(sum)
-    if start == "*":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) * int(y)
-        print(sum)
-    if start == "division":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) / int(y)
-        print(sum)
-    if start == "Division":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) / int(y)
-        print(sum)
-    if start == "/":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) / int(y)
-        print(sum)
-    if start == "addition":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) + int(y)
-        print(sum)
-    if start == "Addition":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) + int(y)
-        print(sum)
-    if start == "+":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) + int(y)
-        print(sum)
-    if start == "subtraction":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) - int(y)
-        print(sum)
-    if start == "Subtraction":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) - int(y)
-        print(sum)
-    if start == "-":
-        x = input("Input the first number: ")
-        y = input("Input the second number: ")
-        sum = int(x) - int(y)
-        print(sum)
-    if start == "random":
-        print(random.randrange(69, 420))
-    if start == "help":
-        print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random")
-    if start == "Help":
-        print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random")
-    if start == "69":
-        url = 'https://youtu.be/U2OjsKMcZQA'
-        webbrowser.register('chrome',
-	    None,
-	    webbrowser.BackgroundBrowser("C://Program Files (x86)//Google//Chrome//Application//chrome.exe"))
-        webbrowser.get('chrome').open(url)
-        print("Enjoy fireball :D")
-    if start == "cock":
-        url = 'https://youtu.be/U2OjsKMcZQA'
-        webbrowser.register('chrome',
-	    None,
-	    webbrowser.BackgroundBrowser("C://Program Files (x86)//Google//Chrome//Application//chrome.exe"))
-        webbrowser.get('chrome').open(url)
-        print("Enjoy fireball :D")
-    else:
-        time.sleep(2)
-        print("That is either not a valid phrase or was mistyped :c sorry")
-def ask ():
-    close = input("Would you like to close this window? Y/N\n")
-    if close == "Y":
-        exit()
-    if close == "N":
-        start = input("So, what type of math problem are we doing today? \n")
-        answers()
-    if close == "y":
-        exit()
-    if close == "n":
-        start = input("So, what type of math problem are we doing today? \n")
-        answers()
-    if close == "Yes":
-        exit()
-    if close == "No":
-        start = input("So, what type of math problem are we doing today? \n")
-        answers()
-    if close == "yes":
-        exit()
-    if close == "no":
-        start = input("So, what type of math problem are we doing today? \n")
-        answers()
-
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-ask()
-
+print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * ")
+while True:
+    start = input("So, what type of math problem are we doing today? \n").lower()
+    time.sleep(1)
+    if start in ['add', 'addition', 'Addition', 'sub', 'subtraction', 'Subtraction' 'mult', 'multiplication', 'Multiplication', 'div', 'division', 'Division', '*', '/', '-', '+']:
+        n1 = input("Input the first number: \n")
+        n2 = input("Input the second number: \n")
+        if start == 'add':
+            add(n1, n2)
+        elif start == 'sub':
+            sub(n1, n2)
+        elif start == 'mult':
+            mult(n1, n2)
+        elif start == 'div':
+            div(n1, n2)
+        elif start == 'division':
+            div(n1, n2)
+        elif start == 'addition':
+            add(n1, n2)
+        elif start == 'Addition':
+            add(n1, n2)
+        elif start == 'Division':
+            div(n1, n2)
+        elif start == 'subtraction':
+            sub(n1, n2)
+        elif start == 'Subtraction':
+            sub(n1, n2)
+        elif start == 'multiplication':
+            mult(n1, n2)
+        elif start == 'Multiplication':
+            mult(n1, n2)
+        elif start == 'help':
+            print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random")
+        elif start == '69':
+            url = 'https://youtu.be/U2OjsKMcZQA'
+            webbrowser.register('chrome',
+	        None,
+	        webbrowser.BackgroundBrowser("C://Program Files (x86)//Google//Chrome//Application//chrome.exe"))
+            webbrowser.get('chrome').open(url)
+            print("Enjoy fireball :D")
+        elif start == 'Help':
+            print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random")
+        elif start == '/':
+            div(n1, n2)
+        elif start == '*':
+            mult(n1, n2)
+        elif start == '+':
+            add(n1, n2)
+        elif start == '-':
+            sub(n1, n2)
