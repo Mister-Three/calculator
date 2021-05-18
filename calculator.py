@@ -80,3 +80,5 @@ while True:
             power(n1, n2)
         elif start == 'pi':
             pi()
+	elif start == 'Pi'
+		pi()
