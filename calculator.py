@@ -51,13 +51,6 @@ while True:
             mult(n1, n2)
         elif start == 'help':
             print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random \n Remainder \n Power, ** \n pi")
-        elif start == '69':
-            url = 'https://youtu.be/U2OjsKMcZQA'
-            webbrowser.register('chrome',
-	        None,
-	        webbrowser.BackgroundBrowser("C://Program Files (x86)//Google//Chrome//Application//chrome.exe"))
-            webbrowser.get('chrome').open(url)
-            print("Enjoy fireball :D")
         elif start == 'Help':
             print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random \n Remainder \n Power, ** \n pi")
         elif start == '/':
