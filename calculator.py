@@ -22,11 +22,11 @@ print("Hello, " + user_name)
 print("Welcome to M3r_\'s math problem solver " + user_name )
 print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random \n Remainder \n Power, ** \n pi")
 while True:
-    start = input("So, what type of math problem are we doing today " + user_name \n).lower()
+    start = input("So, what type of math problem are we doing today " + user_name ).lower()
     time.sleep(1)
     if start in ['add', 'addition', 'Addition', 'sub', 'subtraction', 'Subtraction', 'mult', 'multiplication', 'Multiplication', 'div', 'division', 'Division', '*', '/', '-', '+', 'remainder', 'power', '**', 'pi']:
-        n1 = input("Input the first number " + user_name: \n)
-        n2 = input("Input the second number " + user_name: \n")
+        n1 = input("Input the first number " + user_name )
+        n2 = input("Input the second number " + user_name )
         if start == 'add':
             add(n1, n2)
         elif start == 'sub':
@@ -75,5 +75,3 @@ while True:
             power(n1, n2)
         elif start == 'pi':
             pi()
-	elif start == 'Pi'
-		pi()
