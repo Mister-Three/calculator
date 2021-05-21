@@ -9,9 +9,9 @@ def sub(n1, n2):
 def mult(n1, n2):
     print(int(n1) * int(n2))
 def div(n1, n2):
-    print(int(n1) / int(n2))
+    print(float(n1) / float(n2))
 def remain(n1, n2):
-    print(int(n1) % int(n2))
+    print((n1) % int(n2))
 def power(n1, n2):
     print(int(n1) ** int(n2))
 def pi():
@@ -23,7 +23,7 @@ time.sleep(1)
 print("Welcome to M3r_\'s math problem solver")
 print(" Addition, + \n Subtraction, - \n Division, / \n Multiplication, * \n Random \n Remainder \n Power, ** \n pi")
 while True:
-    start = input("So, what type of math problem are we doing today " + user_name ).lower()
+    start = input("So, what type of math problem are we doing today: ").lower()
     time.sleep(1)
     if start in ['add', 'addition', 'Addition', 'sub', 'subtraction', 'Subtraction', 'mult', 'multiplication', 'Multiplication', 'div', 'division', 'Division', '*', '/', '-', '+', 'remainder', 'power', '**', 'pi']:
         n1 = input("Input the first number: ")
